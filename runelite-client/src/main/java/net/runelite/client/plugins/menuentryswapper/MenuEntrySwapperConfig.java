@@ -837,6 +837,15 @@ public interface MenuEntrySwapperConfig extends Config
 	{
 		return CharterOption.TRADE;
 	}
+	
+	@ConfigItem(
+		keyName = "swapHopTo",
+		name = "Swap Kick User",
+		description = "Swap Kick User with Hop-To in CC Interface"
+		position = 28,
+		section = "miscellaneousSection"
+	)
+	default boolean swapHopTo() {return true;}
 
 	//------------------------------------------------------------//
 	// Shop / Stores
